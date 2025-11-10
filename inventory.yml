@@ -1,0 +1,11 @@
+lab:
+  hosts:
+    debian-1:
+      ansible_host: 192.168.0.197
+      ansible_user: lab
+    debian-2:
+      ansible_host: 192.168.0.244
+      ansible_user: lab
+    debian-3:
+      ansible_host: 192.168.0.47
+      ansible_user: lab

@@ -1,0 +1,11 @@
+- name: Copy SSH key to all hosts
+  hosts: all
+  gather_facts: no
+  vars_prompt:
+    - name: password
+      prompt: password
+  tasks:
+    - ansible.posix.authorized_key:
+        user: lab
+        state: present
+        key: "{{ lookup('file', '/Users/amp/.ssh/id_ed25519.pub') }}" 
