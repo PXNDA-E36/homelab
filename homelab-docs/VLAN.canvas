@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"9a635e405092ac54","type":"text","text":"Main - 192.168.0.0/24","x":-225,"y":-437,"width":250,"height":60,"color":"4"},
+		{"id":"d0ae82ff61714a7e","type":"text","text":"Guest 192.168.1.0/24","x":-225,"y":-540,"width":250,"height":60,"color":"1"},
+		{"id":"5e51ad623550c053","type":"text","text":"IoT 10.0.30.0/24\n- TV\n- Lil box thingy","x":100,"y":-472,"width":250,"height":130},
+		{"id":"1664c4f7b82bc3fe","type":"text","text":"Arr 10.0.20.0/24","x":100,"y":-227,"width":250,"height":60,"color":"6"},
+		{"id":"43c866d2938f7c2c","type":"text","text":"HA 10.0.40.0/24\n","x":-475,"y":-279,"width":250,"height":60,"color":"3"},
+		{"id":"b41f1107c1e9f030","type":"text","text":"Services 10.0.10.0/24\n- Immich\n- Vaultwarden\n- Headscale\n- Glance","x":-260,"y":-140,"width":250,"height":236,"color":"5"},
+		{"id":"f6df82f67ac96550","type":"text","text":"CCTV/Frigate 10.0.50.0/24","x":-820,"y":-290,"width":250,"height":82,"color":"#ffffff"},
+		{"id":"57ffa9d2f1f81b2a","type":"text","text":"Server Default 10.0.0.0/24\n- Proxmox \n- Docker","x":-640,"y":-492,"width":250,"height":170,"color":"2"}
+	],
+	"edges":[
+		{"id":"e7199d61016cd8e0","fromNode":"9a635e405092ac54","fromSide":"left","toNode":"43c866d2938f7c2c","toSide":"top","color":"4"},
+		{"id":"e15c591aa062859b","fromNode":"9a635e405092ac54","fromSide":"right","toNode":"5e51ad623550c053","toSide":"left","color":"4"},
+		{"id":"5bcddc967a7b0be4","fromNode":"9a635e405092ac54","fromSide":"right","toNode":"1664c4f7b82bc3fe","toSide":"left","color":"4"},
+		{"id":"6b8d0bb30d2b048d","fromNode":"b41f1107c1e9f030","fromSide":"right","toNode":"1664c4f7b82bc3fe","toSide":"bottom","color":"5","label":"Dashboard"},
+		{"id":"883de4bfe477a5d5","fromNode":"9a635e405092ac54","fromSide":"left","toNode":"57ffa9d2f1f81b2a","toSide":"right","color":"4"},
+		{"id":"5da8e1bd6af4413f","fromNode":"5e51ad623550c053","fromSide":"bottom","toNode":"1664c4f7b82bc3fe","toSide":"top","label":"Jellyfin"},
+		{"id":"6bec7deaa16e0a5d","fromNode":"b41f1107c1e9f030","fromSide":"left","toNode":"43c866d2938f7c2c","toSide":"bottom","color":"5","label":"Dashboard"},
+		{"id":"bb759fb016275708","fromNode":"b41f1107c1e9f030","fromSide":"top","toNode":"43c866d2938f7c2c","toSide":"right","color":"5","label":"Tailscale"},
+		{"id":"2bc7599aa7b9d981","fromNode":"9a635e405092ac54","fromSide":"bottom","toNode":"b41f1107c1e9f030","toSide":"right","color":"4"},
+		{"id":"5d7a52adb51165fb","fromNode":"f6df82f67ac96550","fromSide":"right","toNode":"43c866d2938f7c2c","toSide":"left","color":"#ffffff","label":"HA"}
+	]
+}
